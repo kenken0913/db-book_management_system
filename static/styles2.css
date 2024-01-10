@@ -1,0 +1,22 @@
+body {
+    padding: 20px;
+    font-size: 18px;
+}
+
+h1, h2 {
+    color: #0288d1;
+    border-bottom: 2px solid #0288d1;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

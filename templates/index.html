@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Management System</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<div class="center-screen">
+    <h2>書籍管理システムへようこそ！</h2>
+    <p>ここでは、書籍の追加、閲覧、削除ができます。詳細は<a href="{{ url_for('help') }}">こちら</a>をクリックしてください。</p>
+</div>
+
+<body>
+    <h1>Book Management System</h1>
+    <form action="/add" method="post">
+        <input type="text" name="title" placeholder="Title">
+        <input type="text" name="author" placeholder="Author">
+        <input type="text" name="published_date" placeholder="Published Date">
+        <input type="text" name="isbn" placeholder="ISBN">
+        <input type="submit" value="Add Book">
+    </form>
+    <ul>
+        {% for book in books %}
+        <li>
+            {{ book.title }} by {{ book.author }} (Added on {{ book.added_date.strftime('%Y-%m-%d %H:%M:%S') }})
+            <form action="/delete/{{ book.id }}" method="post">
+                <input type="submit" value="Delete">
+            </form>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

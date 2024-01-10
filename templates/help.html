@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>書籍管理システムの使い方</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles2.css') }}">
+</head>
+<body>
+    <h1>書籍管理システムの使い方</h1>
+    <p>このシステムでは、書籍の追加、閲覧、削除ができます。</p>
+    <h2>書籍の追加</h2>
+    <p>書籍を追加するには、書籍のタイトル、著者、出版日、ISBNを入力し、「書籍を追加」をクリックします。</p>
+    <h2>書籍の閲覧</h2>
+    <p>追加された書籍は、ホームページに一覧表示されます。</p>
+    <h2>書籍の削除</h2>
+    <p>書籍を削除するには、削除したい書籍の隣にある「削除」ボタンをクリックします。</p>
+    <a href="{{ url_for('index') }}">ホームに戻る</a>
+</body>
+</html>
