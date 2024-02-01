@@ -21,7 +21,7 @@ form {
     margin: 20px auto;
 }
 
-form input[type="text"], form input[type="number"] {
+form input[type="text"] {
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ddd;
@@ -30,7 +30,7 @@ form input[type="text"], form input[type="number"] {
     transition: box-shadow 0.3s ease-in-out;
 }
 
-form input[type="text"]:focus, form input[type="number"]:focus {
+form input[type="text"]:focus {
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
@@ -45,51 +45,4 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
     background-color: #0056b3;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
-}
-
-li:hover {
-    background-color: #e0f7fa;
-}
-
-li form {
-    display: inline;
-}
-
-li form input[type="submit"] {
-    background-color: #dc3545;
-}
-
-li form input[type="submit"]:hover {
-    background-color: #c82333;
-}
-
-.center-screen {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    height: 20vh;
-    text-align: center;
-}
-
-a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #0056b3;
 }

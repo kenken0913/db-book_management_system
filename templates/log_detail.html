@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reading Log Detail</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='log_detail.css') }}">
+</head>
+<body>
+    <h1>{{ log.book.title }}</h1>
+    <p>Start Page: {{ log.start_page }}</p>
+    <p>End Page: {{ log.end_page }}</p>
+    <p>Comment: {{ log.comment }}</p>
+</body>
+</html>
